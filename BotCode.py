@@ -8,7 +8,7 @@ from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-bot = telebot.TeleBot("7012423411:AAHcaFjCf30Ls9StwaQu5fRQcx3ouEOWDh4")
+bot = telebot.TeleBot("")
 knowledge_base = pd.read_csv('max.csv')  # Загрузка базы данных знаний
 
 @bot.message_handler(func=lambda message: True)
